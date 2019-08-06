@@ -5,6 +5,7 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
   title: "vuepress-plugin-code-box",
+  base: "/vuepress-plugin-code-box/",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
