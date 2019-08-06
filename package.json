@@ -1,0 +1,25 @@
+{
+  "name": "vuepress-plugin-code-box",
+  "version": "0.0.1",
+  "description": "code box for vuepress",
+  "main": "lib/index.js",
+  "authors": {
+    "name": "xiangxiao",
+    "email": "xxholly32@163.com"
+  },
+  "repository": "/vuepress-plugin-code-box",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0",
+    "@vuepress/plugin-medium-zoom": "^1.0.0",
+    "vuepress": "^1.0.0"
+  },
+  "dependencies": {
+    "highlightjs": "^9.12.0"
+  }
+}
