@@ -1,13 +1,13 @@
 {
   "name": "vuepress-plugin-code-box",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "code box for vuepress",
   "main": "lib/index.js",
   "authors": {
     "name": "xiangxiao",
     "email": "xxholly32@163.com"
   },
-  "repository": "/vuepress-plugin-code-box",
+  "repository": "https://github.com/xxholly32/vuepress-plugin-code-box.git",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
