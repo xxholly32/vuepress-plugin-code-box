@@ -120,7 +120,7 @@ export default {
   }
 
   .code-box-demo {
-    padding: 24px 24px 40px;
+    padding: 24px;
     border-bottom: 1px solid rgb(235, 237, 240);
     color: reba(0, 0, 0, 0.65);
   }
@@ -146,7 +146,6 @@ export default {
 
     .code-box-desc {
       width: 94%;
-      min-height: 24px;
       margin: 0;
 
       p {
