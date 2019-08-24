@@ -30,12 +30,12 @@ module.exports = {
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
+  theme: "default-prefers-color-scheme",
   themeConfig: {
-    theme: "default-prefers-color-scheme",
     repo: "https://github.com/xxholly32/vuepress-plugin-code-box.git",
     editLinks: false,
     lastUpdated: false,
-    defaultTheme: "dark",
+    defaultTheme: { light: [6, 18], dark: [18, 6] },
     nav: [
       {
         text: "指南",
