@@ -2203,6 +2203,13 @@ css-parse@1.7.x:
   resolved "https://registry.npmjs.org/css-parse/-/css-parse-1.7.0.tgz#321f6cf73782a6ff751111390fc05e2c657d8c9b"
   integrity sha1-Mh9s9zeCpv91ERE5D8BeLGV9jJs=
 
+css-prefers-color-scheme@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.npmjs.org/css-prefers-color-scheme/-/css-prefers-color-scheme-3.1.1.tgz#6f830a2714199d4f0d0d0bb8a27916ed65cff1f4"
+  integrity sha512-MTu6+tMs9S3EUqzmqLXEcgNRbNkkD/TGFvowpeoWJn5Vfq7FMgsmRQs9X5NXAURiOBmOxm/lLjsDNXDE6k9bhg==
+  dependencies:
+    postcss "^7.0.5"
+
 css-select-base-adapter@^0.1.1:
   version "0.1.1"
   resolved "https://registry.npmjs.org/css-select-base-adapter/-/css-select-base-adapter-0.1.1.tgz#3b2ff4972cc362ab88561507a95408a1432135d7"
@@ -7053,6 +7060,13 @@ vuepress-plugin-container@^2.0.0:
   integrity sha512-SrGYYT7lkie7xlIlAVhn+9sDW42MytNCoxWL/2uDr+q9wZA4h1uYlQvfc2DVjy+FsM9PPPSslkeo/zCpYVY82g==
   dependencies:
     markdown-it-container "^2.0.0"
+
+vuepress-theme-default-prefers-color-scheme@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/vuepress-theme-default-prefers-color-scheme/-/vuepress-theme-default-prefers-color-scheme-1.0.1.tgz#2f49be23d88b67581d7e47b9ee894a589545ffba"
+  integrity sha512-lcjw+DMRUi6sqqtorzER5eX8wriLRN6sw/kkwLL8I/4VpcmgV/Ng/Re7v9SF9VN7GJZv7stqrfhD0r1UGlNmyg==
+  dependencies:
+    css-prefers-color-scheme "^3.1.1"
 
 vuepress@^1.0.0:
   version "1.0.3"

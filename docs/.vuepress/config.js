@@ -31,9 +31,11 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
+    theme: "default-prefers-color-scheme",
     repo: "https://github.com/xxholly32/vuepress-plugin-code-box.git",
     editLinks: false,
     lastUpdated: false,
+    defaultTheme: "dark",
     nav: [
       {
         text: "指南",
@@ -53,6 +55,13 @@ module.exports = {
         }
       ]
     }
+  },
+  // When using `light theme` or `dark theme`, you need to add a postcss plugins to your config.js
+  postcss: {
+    plugins: [
+      require("css-prefers-color-scheme/postcss"),
+      require("autoprefixer")
+    ]
   },
 
   /**
