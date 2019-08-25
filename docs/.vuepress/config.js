@@ -35,8 +35,7 @@ module.exports = {
     repo: "https://github.com/xxholly32/vuepress-plugin-code-box.git",
     editLinks: false,
     lastUpdated: false,
-    defaultTheme: "light",
-    // defaultTheme: { light: [6, 18], dark: [18, 6] },
+    defaultTheme: "{ dark: [18, 6] }",
     nav: [
       {
         text: "指南",
