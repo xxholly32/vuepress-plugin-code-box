@@ -66,20 +66,20 @@ module.exports = {
   plugins: [
     require('../../lib'),
     '@vuepress/plugin-back-to-top',
-    // "@vuepress/plugin-medium-zoom"
-    [
-      'gitalk-maker',
-      {
-        gitalkConfig: {
-          clientID,
-          clientSecret,
-          repo: 'vuepress-plugin-code-box',
-          owner: 'xxholly32',
-          admin: ['xxholly32'],
-          // id: location.pathname, // 无法配置默认用 location.pathname
-          distractionFreeMode: false, // Facebook-like distraction free mode
-        },
-      },
-    ],
+    "@vuepress/plugin-medium-zoom"
+    // [
+    //   'gitalk-maker',
+    //   {
+    //     gitalkConfig: {
+    //       clientID,
+    //       clientSecret,
+    //       repo: 'vuepress-plugin-code-box',
+    //       owner: 'xxholly32',
+    //       admin: ['xxholly32'],
+    //       // id: location.pathname, // 无法配置默认用 location.pathname
+    //       distractionFreeMode: false, // Facebook-like distraction free mode
+    //     },
+    //   },
+    // ],
   ],
 };

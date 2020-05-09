@@ -4,6 +4,8 @@
 
 vuepress 很多代码展示需要做一个显示和代码分层，在一些 ui component 项目中药显示 api 特别用的到，比如 [ant-design](https://ant.design/index-cn) [element-ui](https://element.eleme.cn/#/) 等
 
+![](https://dss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/skin_zoom/120.jpg)
+
 ## 安装
 
 ```js

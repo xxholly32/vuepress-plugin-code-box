@@ -4,23 +4,29 @@
       <slot></slot>
     </section>
     <section class="code-box-meta">
-      <div class="code-box-title">{{title}}</div>
+      <div class="code-box-title">{{ title }}</div>
       <div class="code-box-desc" v-html="desc"></div>
       <div class="code-box-action">
         <span class="code-box-expand">
-          <img
-            src="./image/code-not-open.svg"
-            v-show="!showCode"
-            @click="changeCode"
-            alt="expand code"
-          />
-          <img
-            src="./image/code-open.svg"
-            v-show="showCode"
-            @click="changeCode"
-            title="收起代码"
-            alt="collpse code"
-          />
+          <a v-show="!showCode">
+            <img
+              src="./image/code-not-open.svg"
+              class="code-box-img"
+              v-show="!showCode"
+              @click="changeCode"
+              alt="expand code"
+            />
+          </a>
+          <a v-show="showCode">
+            <img
+              src="./image/code-open.svg"
+              class="code-box-img"
+              v-show="showCode"
+              @click="changeCode"
+              title="收起代码"
+              alt="collpse code"
+            />
+          </a>
         </span>
       </div>
     </section>
@@ -49,7 +55,7 @@ const md = new MarkdownIt({
       }</code></pre>`;
     }
     return "";
-  }
+  },
 });
 
 export default {
@@ -57,35 +63,34 @@ export default {
   props: {
     title: {
       type: String,
-      default: ""
+      default: "",
     },
     description: {
       type: String,
-      default: ""
-    }
+      default: "",
+    },
   },
   data() {
     return {
       desc: "",
-      showCode: false
+      showCode: false,
     };
   },
   methods: {
     changeCode() {
       this.showCode = !this.showCode;
-    }
+    },
   },
   mounted() {
     this.desc = md.render(this.description);
     let $code = this.$el.nextSibling;
     $code = $code.innerHTML ? $code : $code.nextSibling;
     this.$refs.highlight.appendChild($code);
-  }
+  },
 };
 </script>
 
-
-<style lang='stylus'>
+<style lang="stylus">
 .slide-fade-enter-active {
   translateY: 10px;
   transform: translateY(0px);
