@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-code-box",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "code box for vuepress",
   "main": "lib/index.js",
   "authors": {
